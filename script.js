@@ -1,3 +1,4 @@
+"use strict"
 // alert("Hande hoch");
 
 // const result = confirm("are you here?");
