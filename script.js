@@ -246,3 +246,36 @@
 // }
 // 
 // console.log(personalMovieDB);
+
+// LESSON 16---------------------------------------------------------------------------------
+
+// let num = 20; // глобальная переменная
+
+// function showFirstMessage(text) { // начинается обычно с глагола - показать - первое сообщение
+//     console.log(text);
+//     let num = 10; // локальная переменная
+//     console.log(num)
+// }
+// // замыкание функции - это сама функция с всеми переменными, которые ей доступны 
+// showFirstMessage('Hello world');
+// console.log(num);
+
+// let num = 20; // глобальная переменная
+
+// function calc(a, b) {
+//     return (a + b);
+// }
+
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(10, 6));
+
+// function ret() {
+//     let num = 50;
+//     return num; // возвращает значение NUM во внешний мир - 50
+// }
+
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+// LESSON 17---------------------------------------------------------------------------------
