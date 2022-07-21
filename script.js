@@ -84,14 +84,32 @@
 
 // console.log(personalMovieDB);
 
-const num = 50;
+// if (num < 50) {
+//     console.log('min');
+// } else if (num > 100) {
+//     console.log('max');
+// } else {
+//     console.log('Good');
+// };
 
-if (num < 50) {
-    console.log('min');
-} else if (num > 100) {
-    console.log('max');
-} else {
-    console.log('Good');
+// (num === 50) ? console.log('Good') : console.log('error'); // ternarniy operator
+
+const num = 44;
+
+switch (num) { // свитч нужен ТОЛЬКО для точного сравнения
+    case 49:
+        console.log('no');
+        break;
+    case 100:
+        console.log('no');
+        break;
+    case 50:
+        console.log('ok');
+        break;
+    case 110:
+        console.log('no');
+        break;
+    default:
+        console.log('not today');
+        break;
 };
-
-(num === 50) ? console.log('Good') : console.log('error');
