@@ -1,5 +1,3 @@
-"use strict";
-
 // alert("Hande hoch");
 
 // const result = confirm("are you here?");
@@ -87,7 +85,7 @@
 
 // console.log(personalMovieDB);
 
-// LESSON 13---------------------------------------------------------------------------------
+// LESSON 13-------------------------------------------------------------------------------
 
 // if (num < 50) {
 //     console.log('min');
