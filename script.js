@@ -155,7 +155,8 @@
 // for (let i = 1; i < 10; i++) {
 //     if (i === 6) {
 //         //break;
-//         continue; // позволяет пропустить шаг который нам не нужен ,
+//         continue; 
+// позволяет пропустить шаг который нам не нужен ,
 // но при этом не прерывает полностью цикл
 //     }
 
@@ -283,23 +284,66 @@
 // console.log(calc(5, 6));
 // console.log(calc(10, 6));
 
-function ret() {
-    let num = 50;
-    return num; // возвращает значение NUM во внешний мир - 50
-}
+// function ret() {
+//     let num = 50;
+//     return num; // возвращает значение NUM во внешний мир - 50
+// }
 
-const anotherNum = ret();
-console.log(anotherNum);
+// const anotherNum = ret();
+// console.log(anotherNum);
 
 
-const logger = function() {
-    console.log('Hello');
-};
+// const logger = function() {
+//     console.log('Hello');
+// };
 
-logger();
+// logger();
 
-const calc = (a, b) => { return a + b; }; // если функция содержит один аргумент
-// или функция в одну строчку, то скобки можно
-// опускать const calc = (a, b) => a + b ;
+// const calc = (a, b) => { return a + b; }; если функция содержит один аргумент
+// // или функция в одну строчку, то скобки можно
+// // опускать const calc = (a, b) => a + b ;
 
 // LESSON 17----------------------------------------------
+/*
+const str = 'teSt';
+
+// console.log(str[2] = 'd');
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str);
+
+const fruit = 'Some fruit';
+
+// позволяет найти индекс с которого начинается слово fruit - поиск подстроки
+console.log(fruit.indexOf('fruit')); 
+
+const logg = 'Hello world';
+
+// метод позволяет обрезать по определенным индексам
+// ( принимает агрументы стар и энд)
+console.log(logg.slice(6, 11));
+
+// метод позволяет обрезать по определенным индексам, 
+// здесь первый аргумент можно задавать больше чем второй
+// и не поддерживает отрицаетельные индексы. 
+console.log(logg.substring(6, 11));
+
+// здесь мы указываем с какой позиции и сколько символов нам необходимо вырезать
+console.log(logg.substr(6, 1));
+
+const num = 12.2;
+
+//метод округляет до ближайшего целого числа
+console.log(Math.round(num));
+
+const test = "12.2px";
+
+//переводит число в другую систему исчесления
+console.log(parseInt(test));
+
+//переводит строку или число и возвращет в десятичном виде
+console.log(parseFloat(test));
+*/
+
+// LESSON 18----------------------------------------------
