@@ -445,11 +445,10 @@ console.log(personalMovieDB);
 */
 
 // LESSON 19----------------------------------------------
-
+/*
 function first() {
-    // do something
     setTimeout(function() {
-        console.log(1);
+    console.log(1);
     }, 500);
 }
 
@@ -459,3 +458,40 @@ function second() {
 
 first();
 second();
+
+function learnJS(lang, callback) {
+    console.log(`I learn: ${lang}`);
+    callback();
+}
+
+function done() {
+    console.log('I done this lessen!');
+}
+
+learnJS('JavaScript', done);
+
+*/
+
+// LESSON 20----------------------------------------------
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    }
+};
+
+console.log(options.name);
+
+//удалить свойство из объекта
+delete options.name;
+
+console.log(options);
+
+// перебирает свойства объекта
+for ( let key in options) {
+    console.log(`Свойства ${key} имеет значение ${options[key]}`);
+}
