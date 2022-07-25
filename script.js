@@ -368,7 +368,7 @@ genres
 P.S. Функции вызывать не обязательно*/
 
 // Код возьмите из предыдущего домашнего задания
-
+/*
 let numberOfFilms;
 
 function start() {
@@ -423,6 +423,7 @@ function detectPersonalLevel() {
 detectPersonalLevel();
 
 function showMyDB(hidden) {
+    // в условии if - действие будет выполняться если в условии значение получается true
     if (!hidden) {
         console.log(personalMovieDB);
     }
@@ -440,3 +441,21 @@ function writeYourGenres() {
 writeYourGenres();
 
 console.log(personalMovieDB);
+
+*/
+
+// LESSON 19----------------------------------------------
+
+function first() {
+    // do something
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
