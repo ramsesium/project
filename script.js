@@ -473,7 +473,7 @@ learnJS('JavaScript', done);
 */
 
 // LESSON 20----------------------------------------------
-
+/*
 const options = {
     name: 'test',
     width: 1024,
@@ -484,14 +484,71 @@ const options = {
     }
 };
 
-console.log(options.name);
+console.log(options['colors']['border']);
 
-//удалить свойство из объекта
+удалить свойство из объекта
 delete options.name;
 
 console.log(options);
 
 // перебирает свойства объекта
 for ( let key in options) {
-    console.log(`Свойства ${key} имеет значение ${options[key]}`);
+    if (typeof(options[key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Свойства ${i} имеет значение ${options[key][i]}`);
+        }
+    } else {
+        console.log(`Свойства ${key} имеет значение ${options[key]}`);
+    }    
 }
+
+let counter = 0;
+for ( let key in options) {
+    if (typeof(options[key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Свойства ${i} имеет значение ${options[key][i]}`);
+            counter++;
+        }
+    } else {
+        console.log(`Свойства ${key} имеет значение ${options[key]}`);
+        counter++;
+    }    
+}
+console.log(counter);
+
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     }
+// };
+
+// //получаем массив из объекта в ключе верхнего уровня
+// console.log(Object.keys(options).length);
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    // создание своего метода
+    makeTest: function() {
+        console.log('Test');
+    }
+};
+
+options.makeTest();
+
+// деструктуризация - вытащили отдельные свойства в качестве отдельной переменной
+const {border, bg} = options.colors;
+console.log(border);
+ 
+// console.log(Object.keys(options).length);
+*/
+
