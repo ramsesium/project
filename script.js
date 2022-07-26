@@ -552,3 +552,108 @@ console.log(border);
 // console.log(Object.keys(options).length);
 */
 
+// LESSON 21----------------------------------------------
+
+const arr = [1, 32, 3, 16, 8, 10];
+
+// сравнение идет посимвольное и отсортировался как строки
+// arr.sort();
+// console.log(arr);
+
+// arr.sort(compareName);
+// console.log(arr);
+
+// //пока просто запомнить структуру функцию
+// function compareName(a, b) {
+//     return a - b;
+// }
+
+// arr[99] = 0;
+// console.log(arr.length);
+// console.log(arr);
+
+// //гибко перебирает элементы массива- можно настраивать, может быть 3 аргумента
+// // что перебираем, номер по порядку, и какой массив перебираем
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} inside of array ${arr}`);
+// });
+
+// //pop удаляет последний элемент массива
+// arr.pop();
+
+// //push добавляет элемент в конец массива
+// arr.push(10);
+
+// //переборка массива
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// //for of перебор - можно также перебрать элементы строки
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+// //split формируем массив с нужным разделитем ', '
+// const str = prompt('', '');
+// const products = str.split(', ');
+// console.log(products);
+
+// // метод сортировки
+// products.sort();
+
+// //join объединение элементов массива ', ' в строку
+// console.log(products.join('; '));
+
+// LESSON 22----------------------------------------------
+
+// let a = 5,
+//     b = a;
+
+// b = b + 5;
+
+// console.log(b);
+// console.log(a);
+
+// const obj = {
+//     a: 10,
+//     b: 1
+// };
+
+// //передается ссылка на объект
+// const copy = obj;
+
+// copy.a = 20;
+
+// console.log(copy);
+// console.log(obj);
+
+function copy(mainObj) {
+    let objCopy = {};
+
+    let key;
+    for (key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+
+    return objCopy;
+}
+
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 7,
+        y: 4
+    }
+};
+
+
+//создаем поверхностную копию (бывает еще глубокая)
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;
+newNumbers.c.x = 10;
+
+console.log(newNumbers);
+console.log(numbers);
