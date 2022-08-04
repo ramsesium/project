@@ -705,3 +705,49 @@ const newObj = {...q};
 console.log(newObj); */
 
 // LESSON 23----------------------------------------------
+
+// let str = 'some';
+// let strObj = new String(str);
+
+// console.log(typeof(str));
+// console.log(typeof(strObj));
+// console.log(strObj);
+
+//console.dir([1,2,3]);
+
+// команда __proto__ старый метод - сейчас не использыется
+
+/*
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log('Hello, man');
+    }
+};
+
+const jonh = {
+    health: 100
+};
+
+// jonh.__proto__ = soldier;
+
+Object.setPrototypeOf(jonh, soldier); // современный метод
+
+// console.log(jonh.armor);
+
+jonh.sayHello();
+*/
+
+// const soldier = {
+//     health: 400,
+//     armor: 100,
+//     sayHello: function() {
+//         console.log('Hello, man');
+//     }
+// };
+
+// //создаем новый объект Джон, который бует прототипно наследоваться от Солдата
+// const jonh = Object.create(soldier);
+
+// jonh.sayHello();
