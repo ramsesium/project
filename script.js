@@ -606,7 +606,7 @@ console.log(border);
 // console.log(products.join('; '));
 
 // LESSON 22----------------------------------------------
-
+/*
 // let a = 5,
 //     b = a;
 
@@ -702,6 +702,6 @@ const q = {
 };
 
 const newObj = {...q};
-console.log(newObj);
+console.log(newObj); */
 
-
+// LESSON 23----------------------------------------------
