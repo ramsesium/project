@@ -25,7 +25,7 @@ const oneHeart = document.querySelector('div'); // позволяет получ
 // - тот который попался первым
 console.log(oneHeart);
 */
-
+/*
 const box = document.getElementById('box');
 const btns = document.getElementsByTagName('button');
 const circles = document.getElementsByClassName('circle');
@@ -85,3 +85,4 @@ div.innerHTML = "<h1>Hello world</h1>"; //1 metod // если хотим пол�
 // div.insertAdjacentHTML('afterbegin', '<h2>Privet</h2>');
 // div.insertAdjacentHTML('beforeend', '<h2>Privet</h2>');
 // div.insertAdjacentHTML('afterend', '<h2>Privet</h2>');
+*/
