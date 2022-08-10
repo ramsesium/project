@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "jscourse",
+			"path": "../../../../../Documents/Projects/study/jscourse"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project"
+	}
+}
