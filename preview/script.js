@@ -1,63 +1,76 @@
-const btns = document.querySelectorAll('button'),
-      overlay = document.querySelector('.overlay'); 
-
-// btn.onclick = function() { // старая интерпритация
-//     alert('Click');
+/*
+const   btn  = document.querySelector('button'),
+        overlay = document.querySelector('.overlay');
+// btn.onclick = function() {
+//     alert("Click - cluck!!!");
 // };
 
 // btn.onclick = function() {
-//     alert('second Click');
+//     alert("Click - Second!!!");
 // };
 
-// btn.addEventListener('click', () => { // современная
-//     alert('Click');
+// btn.addEventListener('click', () => {
+//     alert('click');
 // });
 
-//------------------------------------
-// в данном примере мы создаем событие, которое происходит при клике мышки по первой кнопке
-// мы создали отдельную переменную deleteElement в которую поместили функцию/ Функция начнет действовать после того как 
-// пользователь кликнет по первой кнопке и функция удалит событие после того как выполнится условие i == 1
-/*
-let i = 0;
-const deleteElement = (event) => {
-    // event.target.remove();
-    console.log(event.target);
-    i++;
-    if (i == 1) {
-        btn.removeEventListener('click', deleteElement);
-    }
-};
+// btn.addEventListener('click', () => {
+//     alert('Click - Second!!!');
+// });
 
-btn.addEventListener('click', deleteElement);
-*/
-//------------------------------------
+// btn.addEventListener('mouseenter', (e) => {
+//     console.log(e.target);
+//     e.target.remove();
+//     // console.log('Hover');
+// });
 
 let i = 0;
-const deleteElement = (event) => {
-    // event.target.remove();
-    console.log(event.currentTarget);
-    console.log(event.type);
+const deleteElement = (e) => {
+    // e.target.remove();
+    console.log(e.currentTarget);
+    console.log(e.type);
     // i++;
     // if (i == 1) {
     //     btn.removeEventListener('click', deleteElement);
     // }
 };
 
-// btn.addEventListener('click', deleteElement);
-// overlay.addEventListener('click', deleteElement);
+btn.addEventListener('click', deleteElement); // после того как мы нажмем на 
+// кнопку будет выполняться функция deleteElement
+overlay.addEventListener('click', deleteElement);
 
-btns.forEach(btn => {
-    btn.addEventListener('click', deleteElement);
-    //btn.addEventListener('click', deleteElement, {once: true}); 
-    // событие произойдет однажды с помщью ОПЦИИ once
+// как отменять события?
+const link = document.querySelector('a');
+
+link.addEventListener('click', (event) => {
+    event.preventDefault(); // бразер понимает что надо остановиться не не нужно переходить по ссылке
+    // помещается в начало
+
+    console.log(event.target);
 });
+*/
+// +++++++++++++++++++++++++++
+// ПРИМЕР для нескольких кнопок 
+const   btns  = document.querySelectorAll('button'),
+        overlay = document.querySelector('.overlay');
 
-//_________________________________________________________
+let i = 0;
+const deleteElement = (e) => {
+    // e.target.remove();
+    console.log(e.target);
+    console.log(e.type);
+};
+
+// btn.addEventListener('click', deleteElement); // после того как мы нажмем на 
+// // кнопку будет выполняться функция deleteElement
+// overlay.addEventListener('click', deleteElement);
+btns.forEach(btn => {
+    btn.addEventListener('click', deleteElement, {once: true});
+});
 
 const link = document.querySelector('a');
 
-link.addEventListener('click', function(event) {
-    event.preventDefault();// метод говорит браузеру СТОЙ -не нужно переходить
-    // по ссылке - мы будем делать кое-что другое -участок когда помещается вначало
+link.addEventListener('click', (event) => {
+    event.preventDefault();
+
     console.log(event.target);
 });
