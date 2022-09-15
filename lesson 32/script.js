@@ -14,9 +14,10 @@
 // console.log(document.querySelector('[data-current="3"]').nextElementSibling);
 // console.log(document.querySelector('#current').parentElement); 
 
-for (let node of document.body.childNodes) {
-    if (node.nodeName == '#text') {
-        continue; // оператор останавливает повторение цикла и начинает его заново уже с другим элементом
-    }
-    console.log(node);
-}
+// for (let node of document.body.childNodes) {
+//     if (node.nodeName == '#text') {
+//         continue; // оператор останавливает повторение цикла и начинает его заново уже с другим элементом
+//     }
+//     console.log(node);
+// }
+
