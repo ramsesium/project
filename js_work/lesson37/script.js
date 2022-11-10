@@ -31,15 +31,15 @@ btns[0].addEventListener('click', () => {
 // +++++++++++++++++++++++++++++++++++++++
 // делегирование событий
 
-// wrapper.addEventListener('click', (event) => {
-//     if (event.target && event.target.tagName == 'BUTTON') { 
-//         // не все элементы поддерживают события клика и чтобы
-//         // все работало правильно мы проверяем и ивет таргет и тэг нэйм
-//         console.log('Hello');
-//     }
-//     // console.dir(event.target); // dir показывает ивент таргет в качестве обьекта
-//     // console.log(event.target); 
-// });
+wrapper.addEventListener('click', (event) => {
+    if (event.target && event.target.tagName == 'BUTTON') { 
+        // не все элементы поддерживают события клика и чтобы
+        // все работало правильно мы проверяем и ивет таргет и тэг нэйм
+        // console.log('Hello');
+    }
+    console.log(event.target); // dir показывает ивент таргет в качестве обьекта
+    // console.log(event.target); 
+});
 
 wrapper.addEventListener('click', (event) => {
     if (event.target && event.target.matches('button.red')) {
